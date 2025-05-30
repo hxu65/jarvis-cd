@@ -92,7 +92,6 @@ def start(self):
     Exec(f'pvserver --server-port={port_Id} --timeout={time_out}{condition}',
          MpiExecInfo(nprocs=self.config['nprocs'],
                      ppn=self.config['ppn'],
-                     hostfile=self.jarvis.hostfile,
                      env=self.mod_env
                     ))
 
